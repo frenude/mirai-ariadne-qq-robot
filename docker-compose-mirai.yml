@@ -1,0 +1,15 @@
+version: '3.4'
+services:
+  mirai-http:
+    build: .
+    image: mirai-http:latest
+    container_name: mirai
+    restart: always
+    ports:
+      - 8080:8080
+    environment:
+      LANG: 'C.UTF-8'
+    volumes:
+      - ./config:/app/config
+      - ./data:/app/data
+      - ./logs:/app/logs
