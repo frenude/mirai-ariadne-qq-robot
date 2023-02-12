@@ -12,7 +12,7 @@ from loguru import logger
 app = Ariadne(
     config(
         verify_key="123456789",  # 填入 VerifyKey
-        account=1095204808,  # 你的机器人的 qq 号
+        account=123456789,  # 你的机器人的 qq 号
     ),
 )
 
